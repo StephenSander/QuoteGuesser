@@ -4,25 +4,25 @@ function generateRandomNumber(num) {
 };
 
 const quotes = [
-    ['Obi-Wan Kenobi', 'May the Force be with you.'],
-    ['The Terminator', "I'll be back"],
-    ['The Joker', 'Why so serious?'],
-    ['Tony Montana', 'Say hello to my little friend!'],
-    ['Announcer (Mortal Kombat)', 'Finish him!'],
-    ['Dorothy', "There's no place like home"],
-    ['GLaDOS', 'The cake is a lie'],
-    ['Mario', "It's-a-me"],
-    ['Gandalf', 'You shall not pass!'],
-    ['Darth Vader', 'I am your father'],
-    ['Andy Dufresne', 'Get busy living, or get busy dying'],
-    ['Uncle Ben', 'With great power comes great responsibility'],
-    ['Doc Brown', "Roads? Where we're going, we don't need roads"],
-    ['Vladimir Makarov', 'Remember...No Russion'],
-    ['William Wallace', "They may take our lives, but they'll never take our freedom!"],
-    ['Harvey Dent', 'You either die a hero or live long enough to see yourself become the villain'],
-    ['King Leonidas', 'This is Sparta!'],
-    ['Master Chief', 'I need a weapon'],
-    ['Captain Jack Sparrow', "I've got a jar of dirt"]
+    ['Obi-Wan Kenobi', 'May the Force be with you.', 'Star Wars'],
+    ['The Terminator', "I'll be back", 'Terminator'],
+    ['The Joker', 'Why so serious?', 'The Dark Knight'],
+    ['Tony Montana', 'Say hello to my little friend!', 'Scarface'],
+    ['Announcer', 'Finish him!', 'Mortal Kombat'],
+    ['Dorothy', "There's no place like home", 'The Wizard of Oz'],
+    ['GLaDOS', 'The cake is a lie', 'Portal'],
+    ['Mario', "It's-a-me", 'Super Mario Bros'],
+    ['Gandalf', 'You shall not pass!', 'The Lord of the Rings'],
+    ['Darth Vader', 'I am your father', 'Star Wars'],
+    ['Andy Dufresne', 'Get busy living, or get busy dying', 'The Shawshank Redemption'],
+    ['Uncle Ben', 'With great power comes great responsibility', 'Spider-Man'],
+    ['Doc Brown', "Roads? Where we're going, we don't need roads", "Back to the Future"],
+    ['Vladimir Makarov', 'Remember...No Russion', 'Call of Duty: Modern Warfare 2'],
+    ['William Wallace', "They may take our lives, but they'll never take our freedom!", 'Braveheart'],
+    ['Harvey Dent', 'You either die a hero or live long enough to see yourself become the villain', 'The Dark Knight'],
+    ['King Leonidas', 'This is Sparta!', '300'],
+    ['Master Chief', 'I need a weapon', 'Halo 2'],
+    ['Captain Jack Sparrow', "I've got a jar of dirt", 'Pirates of the Carribean']
 ]
 
 let gameQuote = [];
@@ -33,6 +33,8 @@ const getQuote = (array) => {
     gameQuote.push(array[generateRandomNumber(array.length)][0]);
     // Grab a random quote
     gameQuote.push(array[generateRandomNumber(array.length)][1]);
+    // Grab a random source
+    gameQuote.push(array[generateRandomNumber(array.length)][2]);
     console.log(gameQuote);
 };
 
