@@ -59,9 +59,9 @@ const getQuote = (array) => {
     };
     let sourceType = findSourceType();
 
-    console.log('Okay are you ready? Here is your quote:');
-    console.log(`"${saying}" - ${author}`)
-    console.log(`From the ${sourceType}: ${source}`);
+    document.querySelector('h1').innerHTML = 'Okay are you ready? Here is your quote:';
+    document.getElementById('first').innerHTML = `"${saying}" - ${author}`;
+    document.getElementById('second').innerHTML = `From the ${sourceType}: ${source}`;
 };
 
 getQuote(quotes);
